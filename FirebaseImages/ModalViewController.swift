@@ -46,11 +46,6 @@ class ModalViewController: UIViewController {
         self.view.addSubview(signupView)
         self.view.addContraintsWithFormat(format: "V:|-200-[v0(250)]", views: signupView)
         self.view.addContraintsWithFormat(format: "H:|-30-[v0]-30-|", views: signupView)
-        
-        let todos = Todo.loadTodos()
-        for todo in todos! {
-            print(todo)
-        }
     
     }
 

@@ -31,6 +31,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Todo.loadTodos()
+        
         self.view.addSubview(backgroundImageView)
         self.view.addContraintsWithFormat(format: "H:|[v0]|", views: backgroundImageView)
         self.view.addContraintsWithFormat(format: "V:|[v0]|", views: backgroundImageView)

@@ -23,6 +23,21 @@ class Todo: Codable {
         self.description = description
     }
     
+    init(document: DocumentSnapshot) {
+        let title = document.data()["title"] as? String
+        let description = document.data()["description"] as? String
+        let hours = document.data()["hoursNeeded"] as? Int
+        let dueDate = document.data()["due_date"] as? Date
+        let completed = document.data()["completed"] as? Bool
+        
+        self.title = title!
+        self.dueDate = dueDate!
+        self.numOfHoursRequired = hours!
+        self.description = description
+        self.isComplete = completed!
+        
+    }
+    
     
     
     static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -42,27 +57,14 @@ class Todo: Codable {
     }
     
     static func loadTodos() -> [Todo]? {
-        var todos = [Todo]()
+        let todos = [Todo]()
         let db = Firestore.firestore()
         db.collection("todos").order(by: "due_date", descending: false).getDocuments { (response, error) in
             if error != nil {
                 print(error)
             } else {
                 for document in (response?.documents)! {
-                    if let title = document.data()["title"] as? String {
-                        if let description = document.data()["description"] as? String {
-                            if let hours = document.data()["hoursNeeded"] as? Int {
-                                if let dueDate = document.data()["due_date"] as? Date {
-                                    if let completed = document.data()["completed"] as? Bool {
-                                        let todo = Todo(title: title, dueDate: dueDate, numOfHoursRequired: hours, description: description)
-                                        todo.isComplete = completed
-                                        todos.append(todo)
-                                        print(todo.title, todo.isComplete, todo.dueDate)
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    let todo = Todo(document: document)
                 }
             }
         }
