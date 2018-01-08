@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C42F322001B00B00BC2920 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C42F312001B00B00BC2920 /* GoogleService-Info.plist */; };
+		21C42F362002D55600BC2920 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C42F352002D55600BC2920 /* ModalViewController.swift */; };
+		21C42F382002DEB300BC2920 /* DevView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C42F372002DEB200BC2920 /* DevView.swift */; };
+		21C42F3A2003123800BC2920 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C42F392003123800BC2920 /* Todo.swift */; };
 		21E3319620019EA00091FAD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3319520019EA00091FAD8 /* AppDelegate.swift */; };
 		21E3319820019EA00091FAD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3319720019EA00091FAD8 /* ViewController.swift */; };
-		21E3319B20019EA00091FAD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E3319920019EA00091FAD8 /* Main.storyboard */; };
 		21E3319D20019EA00091FAD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E3319C20019EA00091FAD8 /* Assets.xcassets */; };
 		21E331A020019EA00091FAD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E3319E20019EA00091FAD8 /* LaunchScreen.storyboard */; };
+		8158F7E7FC94842A61F592CE /* Pods_FirebaseImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEC0C150319E7B2BA258306 /* Pods_FirebaseImages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21C42F312001B00B00BC2920 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21C42F352002D55600BC2920 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		21C42F372002DEB200BC2920 /* DevView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevView.swift; sourceTree = "<group>"; };
+		21C42F392003123800BC2920 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		21E3319220019EA00091FAD8 /* FirebaseImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E3319520019EA00091FAD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21E3319720019EA00091FAD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		21E3319A20019EA00091FAD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21E3319C20019EA00091FAD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21E3319F20019EA00091FAD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21E331A120019EA00091FAD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBEC0C150319E7B2BA258306 /* Pods_FirebaseImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB566A4EFC59D505C9D1DB0 /* Pods-FirebaseImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseImages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseImages/Pods-FirebaseImages.debug.xcconfig"; sourceTree = "<group>"; };
+		D8E53F18B307E7392147611F /* Pods-FirebaseImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseImages.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseImages/Pods-FirebaseImages.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8158F7E7FC94842A61F592CE /* Pods_FirebaseImages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				21E3319420019EA00091FAD8 /* FirebaseImages */,
 				21E3319320019EA00091FAD8 /* Products */,
+				6C54A3BE5DEFD41B1010E384 /* Pods */,
+				AD86495A3261C182AD19EA51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,32 @@
 			children = (
 				21E3319520019EA00091FAD8 /* AppDelegate.swift */,
 				21E3319720019EA00091FAD8 /* ViewController.swift */,
-				21E3319920019EA00091FAD8 /* Main.storyboard */,
+				21C42F372002DEB200BC2920 /* DevView.swift */,
+				21C42F352002D55600BC2920 /* ModalViewController.swift */,
 				21E3319C20019EA00091FAD8 /* Assets.xcassets */,
 				21E3319E20019EA00091FAD8 /* LaunchScreen.storyboard */,
 				21E331A120019EA00091FAD8 /* Info.plist */,
+				21C42F312001B00B00BC2920 /* GoogleService-Info.plist */,
+				21C42F392003123800BC2920 /* Todo.swift */,
 			);
 			path = FirebaseImages;
+			sourceTree = "<group>";
+		};
+		6C54A3BE5DEFD41B1010E384 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCB566A4EFC59D505C9D1DB0 /* Pods-FirebaseImages.debug.xcconfig */,
+				D8E53F18B307E7392147611F /* Pods-FirebaseImages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD86495A3261C182AD19EA51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBEC0C150319E7B2BA258306 /* Pods_FirebaseImages.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21E331A420019EA00091FAD8 /* Build configuration list for PBXNativeTarget "FirebaseImages" */;
 			buildPhases = (
+				019A9D18B5DAA2EF67ADFC09 /* [CP] Check Pods Manifest.lock */,
 				21E3318E20019E9F0091FAD8 /* Sources */,
 				21E3318F20019E9F0091FAD8 /* Frameworks */,
 				21E3319020019E9F0091FAD8 /* Resources */,
+				B23FC1A252EEFC39A033AB2F /* [CP] Embed Pods Frameworks */,
+				4D11AE87F78F4EA367136478 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +160,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				21E331A020019EA00091FAD8 /* LaunchScreen.storyboard in Resources */,
+				21C42F322001B00B00BC2920 /* GoogleService-Info.plist in Resources */,
 				21E3319D20019EA00091FAD8 /* Assets.xcassets in Resources */,
-				21E3319B20019EA00091FAD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		019A9D18B5DAA2EF67ADFC09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseImages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D11AE87F78F4EA367136478 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseImages/Pods-FirebaseImages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B23FC1A252EEFC39A033AB2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseImages/Pods-FirebaseImages-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseImages/Pods-FirebaseImages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21E3318E20019E9F0091FAD8 /* Sources */ = {
@@ -137,21 +245,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				21E3319820019EA00091FAD8 /* ViewController.swift in Sources */,
+				21C42F362002D55600BC2920 /* ModalViewController.swift in Sources */,
+				21C42F382002DEB300BC2920 /* DevView.swift in Sources */,
 				21E3319620019EA00091FAD8 /* AppDelegate.swift in Sources */,
+				21C42F3A2003123800BC2920 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		21E3319920019EA00091FAD8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				21E3319A20019EA00091FAD8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		21E3319E20019EA00091FAD8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +375,7 @@
 		};
 		21E331A520019EA00091FAD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB566A4EFC59D505C9D1DB0 /* Pods-FirebaseImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +391,7 @@
 		};
 		21E331A620019EA00091FAD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E53F18B307E7392147611F /* Pods-FirebaseImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
